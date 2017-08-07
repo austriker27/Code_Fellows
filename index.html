@@ -3,9 +3,26 @@
 <html>
   <head>
     <title>Day 1 Demo </title>
+    <style>
+      #title-text {
+        font-family: Tahoma;
+        color: blue;
+      }
+      h2 {
+        position: absolute;
+        right: 0;
+        top: 0
+      }
+      #menu {
+        font-family: Tahoma;
+        position: absolute;
+        right: 20px;
+      }
+    </style>
   </head>
   <body>
   <h1 id="title-text"> Welcome internet, to my website. David A. Lindahl.   </h1>
+  <h2 id="menu"> Menu </h2>
 
   <!-- body of text -->
   <p>I code things adequately. </p>
@@ -15,4 +32,10 @@
   <img src='http://www.stevensegallery.com/300/200' />
 
   </body>
+  <script>
+    var listeningAnswer = prompt('Are you listening?');
+    alert('I don\'t like your answer of '+ listeningAnswer);
+
+  </script>
+
 </html>
