@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Most Important Quiz You Will Ever Take</title>
+  </head>
+
+  <!-- inline style sheet -->
+  <style>
+    p.questions {
+      font-size: 80%;
+    }
+    #bridge {
+      color: red;
+    }
+    #title {
+      font-size: 300%;
+    }
+
+  </style>
+  <!-- end stylesheet -->
+  <body>
+    <h1 id=title>Halt!</h1>
+    <h2>Welcome to the <span id=bridge>Bridge of Death. </span></h2>
+      <img src="https://vignette1.wikia.nocookie.net/villains/images/b/b4/Stop.jpg/revision/latest?cb=20160310182331" alt="Image of the bridgekeeper from monty python">
+    <h3>You must answer the following to avoid certain death. <h3>
+    <p class="questions"> What is your name? </p>
+    <p class="questions"> What is your quest? </p>
+    <p class="questions"> What is the capital of Assyria? </p>
+    <p class="questions"> What is the air-speed velocity of an unladen African swallow? </p>
+  </body>
+
+  <!-- JS questions via prompt-->
+  <script>
+    var name = prompt('What is your name?');
+    console.log('Q: What is your name?');
+    console.log('A: + ' + name);
+    alert('Stop ' + name + '! Who would cross the Bridge of Death must answer me these questions three, \'ere the other side he or she see.');
+
+    var quest = prompt('What is your quest?');
+    console.log('Q: What is your quest');
+    console.log('A: + ' + quest);
+    alert('Hello ' + name + ', The quest of ' + quest + ' sounds dull.');
+
+    var capitalAssyria = prompt('What is the capital of Assyria?');
+    console.log('Q: What is the capital of Assyria?');
+    console.log('A: + ' + capitalAssyria);
+    alert('No, ' + name + ', ' + capitalAssyria + 'is not correct. Your quest of ' + quest + 'is doomed to eternal peril.');
+
+    var swallowSpeed = prompt('What is the air-speed velocity of an unladen African swallow?');
+    console.log('Q: What is the air-speed velocity of an unladen African swallow?');
+    console.log('A: + ' + swallowSpeed);
+    alert('Untrue, ' + name + ', ' + swallowSpeed + ' is the air-speed velocity of a European swallow. In conclusion your quest of ' + quest + ' is doomed. And ' + capitalAssyria + ' is not the capital of Assyria.');
+
+  </script>
+
+</html>
